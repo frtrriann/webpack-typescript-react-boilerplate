@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "ESNext"],
+    "target": "es2015",
+    "allowJs": true,
+    "baseUrl": "./src",
+    "outDir": "build",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "jsx": "preserve",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "types": ["preact/jsx-runtime"],
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
