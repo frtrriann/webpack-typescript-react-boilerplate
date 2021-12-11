@@ -59,31 +59,28 @@ module.exports = {
   // Determine how modules within the project are treated
   module: {
     rules: [
-      // JavaScript: Use Babel to transpile JavaScript files
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx|ts|tsx)?$/,
         loader: "esbuild-loader",
+        exclude: /node_modules/,
         options: {
           sourcemap: true,
-          loader: "jsx", // Remove this if you're not using JSX
-          target: "es2015", // Syntax to compile to (see options below for possible values)
-        },
-      },
-      {
-        test: /\.tsx?$/,
-        loader: "esbuild-loader",
-        options: {
-          sourcemap: true,
-          loader: "tsx", // Or 'ts' if you don't need tsx
+          loader: "tsx",
           target: "es2015",
         },
       },
 
       // Images: Copy image files to build folder
-      { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: "asset/resource" },
+      { test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i, type: "asset/resource" },
 
-      // Fonts and SVGs: Inline files
-      { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: "asset/inline" },
+      // Fonts to build folder
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[hash][ext][query]",
+        },
+      },
     ],
   },
 
@@ -92,7 +89,9 @@ module.exports = {
     extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
     alias: {
       react: "preact/compat",
+      "react-dom/test-utils": "preact/test-utils",
       "react-dom": "preact/compat",
+      "react/jsx-runtime": "preact/jsx-runtime",
     },
   },
 };

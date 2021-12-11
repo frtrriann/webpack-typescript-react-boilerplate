@@ -1,3 +1,21 @@
 .button {
-  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
 }
+
+.buttony:hover {
+}
+
+.button:focus {
+}
+.button-primary:active {
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+
+

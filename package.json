@@ -10,6 +10,8 @@
   "author": "https://github.com/frtrriann",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.3.1",
+    "normalize.css": "^8.0.1",
     "preact": "^10.6.4"
   },
   "devDependencies": {

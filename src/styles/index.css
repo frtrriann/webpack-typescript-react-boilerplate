@@ -1,0 +1,12 @@
+@import url("normalize.css");
+@import url("fonts/fonts.css");
+@import url("./colors.css");
+
+html {
+  font-family: "Inter";
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+}

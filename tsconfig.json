@@ -11,7 +11,7 @@
     "module": "commonjs",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["preact/jsx-runtime"],
+    "types": ["react/jsx-runtime"],
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
