@@ -5,12 +5,12 @@
   "main": "src/index.tsx",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
+    "build": "npx tsc --noEmit && cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
   },
   "author": "https://github.com/frtrriann",
   "license": "ISC",
   "dependencies": {
-    "classnames": "^2.3.1",
+    "clsx": "^1.1.1",
     "normalize.css": "^8.0.1",
     "preact": "^10.6.4"
   },

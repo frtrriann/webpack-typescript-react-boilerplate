@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { FC, ButtonHTMLAttributes } from "react";
 import buttonStyles from "./style.module.css";
 
@@ -12,7 +12,7 @@ export const Button: FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <button className={classNames(buttonStyles.button)} {...props}>
+    <button className={clsx(buttonStyles.button)} {...props}>
       {children}
     </button>
   );
