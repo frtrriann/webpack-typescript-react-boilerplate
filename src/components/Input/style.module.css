@@ -1,3 +1,16 @@
 .input {
-  
+  border-radius: 8px;
 }
+
+.input-small {
+   padding:4px 10px;
+  }
+  
+  .input-medium {
+    padding: 5px 10px;
+   }
+  
+   .input-large {
+    padding: 7px 10px;
+   }
+   

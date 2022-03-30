@@ -1,6 +1,17 @@
-import inputStyles from './style.module.css'
-import { InputHTMLAttributes, FC } from 'react'
+import inputStyles from "./style.module.css";
+import { InputHTMLAttributes, FC } from "react";
+import clsx from "clsx";
 
-export const Input: FC<InputHTMLAttributes<HTMLInputElement>> = (props) => {
-  return <input className={inputStyles.input} {...props} />
+interface InputProps {
+  size?: "small" | "medium" | "large";
+  inputProps?: InputHTMLAttributes<HTMLInputElement>
 }
+
+export const Input: FC<InputProps> = ({ size = "medium", inputProps ={} }) => {
+  return (
+    <input
+      className={clsx(inputStyles.input, inputStyles[`input-${size}`])}
+      {...inputProps}
+    />
+  );
+};

@@ -2,7 +2,9 @@
   border-radius: 8px;
   cursor: pointer;
   outline: 0;
-  border: 0;
+  /* border: 0; */
+  min-width: 64px;
+
 }
 
 .buttony:hover {
@@ -17,5 +19,14 @@
   cursor: not-allowed;
 }
 
+.button-small {
+  padding: 4px 10px;
+}
 
-
+.button-medium {
+  padding: 5px 15px;
+  
+}
+.button-large {
+  padding: 7px 21px;
+}
