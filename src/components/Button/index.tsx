@@ -1,13 +1,14 @@
 import clsx from "clsx";
-import { FC } from "react";
+import { FunctionComponent, JSX } from "preact";
 import buttonStyles from "./style.module.css";
 
-interface ButtonProps {
+type ButtonProps = Omit<JSX.HTMLAttributes<HTMLButtonElement>, 'size'> & {
   size?: "small" | "medium" | "large";
   disabled?: boolean;
-}
+  children?: string;
+} 
 
-export const Button: FC<ButtonProps> = ({
+export const Button: FunctionComponent<ButtonProps> = ({
   size = "medium",
   children,
   disabled = false,
@@ -17,8 +18,9 @@ export const Button: FC<ButtonProps> = ({
     <button
       disabled={disabled}
       className={clsx(buttonStyles.button, buttonStyles[`button-${size}`])}
+      {...props}
     >
-      {children}
+      {children ?? null}
     </button>
   );
 };

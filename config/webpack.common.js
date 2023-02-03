@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-const { ProvidePlugin } = require("webpack");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
@@ -43,9 +42,7 @@ module.exports = {
       template: paths.appHtml, // template file
       filename: "index.html", // output file
     }),
-    new ProvidePlugin({
-      h: ["preact", "h"],
-    }),
+
     // ESLint configuration
     new ESLintPlugin({
       failOnError: false,
@@ -58,13 +55,9 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx|ts|tsx)?$/,
-        loader: "esbuild-loader",
+        loader: "ts-loader",
+        include: paths.src,
         exclude: /node_modules/,
-        options: {
-          sourcemap: true,
-          loader: "tsx",
-          target: "es2015",
-        },
       },
 
       // Images: Copy image files to build folder

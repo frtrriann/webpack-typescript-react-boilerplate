@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { merge } = require("webpack-merge");
-const { ESBuildMinifyPlugin } = require("esbuild-loader");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const paths = require("./paths");
 const common = require("./webpack.common.js");
@@ -41,9 +41,8 @@ module.exports = merge(common, {
   optimization: {
     minimize: true,
     minimizer: [
-      new ESBuildMinifyPlugin({
-        target: "es2015",
-        css: true, // Apply minification to CSS assets
+      new TerserPlugin({
+        parallel: true,
       }),
     ],
     runtimeChunk: {

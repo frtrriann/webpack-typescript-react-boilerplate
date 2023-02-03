@@ -5,19 +5,23 @@
     "allowJs": true,
     "baseUrl": "./src",
     "outDir": "build",
-    "jsxFactory": "h",
-    "jsxFragmentFactory": "Fragment",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "jsxFactory": "",
+    "jsxFragmentFactory": "",
     "module": "commonjs",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "types": ["react/jsx-runtime"],
     "strict": true,
-    "noEmit": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "react": ["./node_modules/preact/compat/"],
+      "react-dom": ["./node_modules/preact/compat/"]
+    }
   },
-  "include": ["src"],
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"],
   "exclude": ["node_modules"]
 }
