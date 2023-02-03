@@ -2,6 +2,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { merge } = require("webpack-merge");
 const TerserPlugin = require("terser-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const paths = require("./paths");
 const common = require("./webpack.common.js");
@@ -44,6 +45,19 @@ module.exports = merge(common, {
       new TerserPlugin({
         parallel: true,
       }),
+      new CssMinimizerPlugin(
+        {
+          parallel: true,
+          minimizerOptions: {
+            preset: [
+              "default",
+              {
+                discardComments: { removeAll: true },
+              },
+            ],
+          },
+        }
+      ),
     ],
     runtimeChunk: {
       name: "runtime",
