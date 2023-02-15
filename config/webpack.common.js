@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
-
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const paths = require("./paths");
 
 module.exports = {
@@ -48,6 +48,7 @@ module.exports = {
       failOnError: false,
       files: [paths.src],
     }),
+    new ForkTsCheckerWebpackPlugin(),
   ],
 
   // Determine how modules within the project are treated

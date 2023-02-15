@@ -3,7 +3,7 @@
     "lib": ["dom", "ESNext"],
     "target": "es2015",
     "allowJs": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "outDir": "build",
     "jsx": "react-jsx",
     "jsxImportSource": "preact",

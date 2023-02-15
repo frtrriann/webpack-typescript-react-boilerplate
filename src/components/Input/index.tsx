@@ -1,10 +1,10 @@
 import inputStyles from "./style.module.css";
 import clsx from "clsx";
-import { JSX, FunctionComponent } from "preact";
+import { FunctionComponent, HTMLAttributes } from "react";
 
 interface InputProps {
   size?: "small" | "medium" | "large";
-  inputProps?: JSX.HTMLAttributes<HTMLInputElement>;
+  inputProps?: HTMLAttributes<HTMLInputElement>;
 }
 
 export const Input: FunctionComponent<InputProps> = ({ size = "medium", inputProps = {} }) => {

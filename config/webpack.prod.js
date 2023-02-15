@@ -11,6 +11,7 @@ module.exports = merge(common, {
   mode: "production",
   devtool: false,
   output: {
+    publicPath: './',
     path: paths.build,
     filename: "js/[name].[contenthash].bundle.js",
     clean: true

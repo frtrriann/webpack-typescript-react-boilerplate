@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import { FunctionComponent, JSX } from "preact";
+import { FunctionComponent, HTMLAttributes } from "react";
 import buttonStyles from "./style.module.css";
 
-type ButtonProps = Omit<JSX.HTMLAttributes<HTMLButtonElement>, 'size'> & {
+type ButtonProps = Omit<HTMLAttributes<HTMLButtonElement>, 'size'> & {
   size?: "small" | "medium" | "large";
   disabled?: boolean;
   children?: string;

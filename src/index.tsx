@@ -1,7 +1,7 @@
 import { render } from "preact";
-import "styles/index.css";
-import { Button } from "components/Button";
-import { Input } from "components/Input";
+import "./styles/index.css";
+import { Button } from "./components/Button";
+import { Input } from "./components/Input";
 
 const App = (
   <div style={{ padding: 20 }}>
