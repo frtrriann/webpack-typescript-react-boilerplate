@@ -1,20 +1,19 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { merge } = require("webpack-merge");
-const TerserPlugin = require("terser-webpack-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import { merge } from "webpack-merge";
+import TerserPlugin from "terser-webpack-plugin";
+import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
 
-const paths = require("./paths");
-const common = require("./webpack.common.js");
+import paths from "./paths.js";
+import common from "./webpack.common.js";
 
-module.exports = merge(common, {
+export default merge(common, {
   mode: "production",
   devtool: false,
   output: {
-    publicPath: './',
+    publicPath: "./",
     path: paths.build,
     filename: "js/[name].[contenthash].bundle.js",
-    clean: true
+    clean: true,
   },
   module: {
     rules: [
@@ -29,7 +28,8 @@ module.exports = merge(common, {
               sourceMap: false,
               modules: true,
             },
-          }],
+          },
+        ],
       },
     ],
   },
@@ -46,19 +46,17 @@ module.exports = merge(common, {
       new TerserPlugin({
         parallel: true,
       }),
-      new CssMinimizerPlugin(
-        {
-          parallel: true,
-          minimizerOptions: {
-            preset: [
-              "default",
-              {
-                discardComments: { removeAll: true },
-              },
-            ],
-          },
-        }
-      ),
+      new CssMinimizerPlugin({
+        parallel: true,
+        minimizerOptions: {
+          preset: [
+            "default",
+            {
+              discardComments: { removeAll: true },
+            },
+          ],
+        },
+      }),
     ],
     runtimeChunk: {
       name: "runtime",

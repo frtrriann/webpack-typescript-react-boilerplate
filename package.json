@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "webpack boilerplate with typescript and preact",
   "main": "src/index.tsx",
+  "type": "module",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
@@ -15,6 +16,7 @@
     "preact": "^10.12.1"
   },
   "devDependencies": {
+    "@types/node": "^18.14.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.53.0",

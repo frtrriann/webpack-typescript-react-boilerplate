@@ -1,13 +1,12 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+import CopyWebpackPlugin from "copy-webpack-plugin";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import ESLintPlugin from "eslint-webpack-plugin";
+import Dotenv from "dotenv-webpack";
+import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ESLintPlugin = require("eslint-webpack-plugin");
-const Dotenv = require("dotenv-webpack");
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-const paths = require("./paths");
+import paths from "./paths.js";
 
-module.exports = {
+export default {
   // Where webpack looks to start building the bundle
   entry: [paths.appIndexJs],
 

@@ -1,10 +1,9 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { merge } = require("webpack-merge");
+import { merge } from "webpack-merge";
 
-const common = require("./webpack.common.js");
-const paths = require("./paths");
+import common from "./webpack.common.js";
+import paths from "./paths.js";
 
-module.exports = merge(common, {
+export default merge(common, {
   // Set the mode to development or production
   mode: "development",
   // Control how source maps are generated
