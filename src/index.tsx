@@ -1,4 +1,4 @@
-import { render } from "preact";
+import { render } from "react";
 import "./styles/index.css";
 import { Button } from "./components/Button";
 import { Input } from "./components/Input";
