@@ -8,6 +8,9 @@
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
   },
+  "engines": { 
+    "node": ">=16"
+  },
   "author": "https://github.com/frtrriann",
   "license": "ISC",
   "dependencies": {
