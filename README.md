@@ -25,3 +25,11 @@ The development server will start up at `localhost:8080`.
 ```bash
 npm run build
 ```
+
+## Author
+
+- [frtrriann](https://github.com/frtrriann)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
