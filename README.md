@@ -1,6 +1,6 @@
 # 📦Webpack + 📚Typescript + ⚛️Preact boilerplate
 
-Webpack + Typescript + Preact boilerplate to quickly start developing an application 🚀🚀🚀
+Webpack + Typescript + Preact fast & configurable boilerplate to quickly start developing an application 🚀🚀🚀
 
 ## Installation
 
