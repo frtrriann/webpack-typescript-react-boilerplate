@@ -1,1 +1,1 @@
-# 📦Webpack + :typescript: Typescript + ⚛️Preact
+# 📦Webpack + 📚 Typescript + ⚛️Preact
