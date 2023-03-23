@@ -1,1 +1,1 @@
-# webpack-typescript-preact-boilerplate
+# 📦Webpack + :typescript: Typescript + ⚛️Preact
