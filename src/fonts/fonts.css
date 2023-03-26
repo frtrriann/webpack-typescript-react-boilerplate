@@ -1,88 +1,58 @@
 @font-face {
-  font-family: "Inter";
-  src: local("Inter Light"), local("Inter-Light"),
-    url("Inter-Light.woff2") format("woff2"),
-    url("Inter-Light.woff") format("woff");
+  font-family: "OpenSans";
+  src: local("OpenSans Light"), local("OpenSans-Light"),
+    url("OpenSans-Light.woff2") format("woff2"),
+    url("OpenSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("Inter Bold"), local("Inter-Bold"),
-    url("Inter-Bold.woff2") format("woff2"),
-    url("Inter-Bold.woff") format("woff");
-  font-weight: bold;
+  font-family: "OpenSans";
+  src: local("OpenSans Bold"), local("OpenSans-Bold"),
+    url("OpenSans-Bold.woff2") format("woff2"),
+    url("OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("Inter ExtraLight"), local("Inter-ExtraLight"),
-    url("Inter-ExtraLight.woff2") format("woff2"),
-    url("Inter-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter Thin"), local("Inter-Thin"),
-    url("Inter-Thin.woff2") format("woff2"),
-    url("Inter-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter SemiBold"), local("Inter-SemiBold"),
-    url("Inter-SemiBold.woff2") format("woff2"),
-    url("Inter-SemiBold.woff") format("woff");
+  font-family: "OpenSans";
+  src: local("OpenSans SemiBold"), local("OpenSans-SemiBold"),
+    url("OpenSans-SemiBold.woff2") format("woff2"),
+    url("OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("Inter Black"), local("Inter-Black"),
-    url("Inter-Black.woff2") format("woff2"),
-    url("Inter-Black.woff") format("woff");
-  font-weight: 900;
+  font-family: "OpenSans";
+  src: local("OpenSans Regular"), local("OpenSans-Regular"),
+    url("OpenSans-Regular.woff2") format("woff2"),
+    url("OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("Inter Regular"), local("Inter-Regular"),
-    url("Inter-Regular.woff2") format("woff2"),
-    url("Inter-Regular.woff") format("woff");
-  font-weight: normal;
+  font-family: "OpenSans";
+  src: local("OpenSans ExtraBold"), local("OpenSans-ExtraBold"),
+    url("OpenSans-ExtraBold.woff2") format("woff2"),
+    url("OpenSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("Inter ExtraBold"), local("Inter-ExtraBold"),
-    url("Inter-ExtraBold.woff2") format("woff2"),
-    url("Inter-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter Medium"), local("Inter-Medium"),
-    url("Inter-Medium.woff2") format("woff2"),
-    url("Inter-Medium.woff") format("woff");
+  font-family: "OpenSans";
+  src: local("OpenSans Medium"), local("OpenSans-Medium"),
+    url("OpenSans-Medium.woff2") format("woff2"),
+    url("OpenSans-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;

@@ -3,10 +3,24 @@
 @import url("./colors.css");
 
 html {
-  font-family: "Inter";
+  font-family: "Open Sans";
   box-sizing: border-box;
 }
 
+@keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
-  background: white;
+  background: linear-gradient(230deg, var(--main-bg-color), #26738e);
+  background-size: 400% 400%;
+  animation: BackgroundAnimation 16s ease infinite;
 }

@@ -1,17 +1,7 @@
 .button {
-  border-radius: 8px;
   cursor: pointer;
   outline: 0;
-  /* border: 0; */
   min-width: 64px;
-}
-
-.buttony:hover {
-}
-
-.button:focus {
-}
-.button-primary:active {
 }
 
 .button:disabled {
