@@ -11,29 +11,35 @@
   "engines": {
     "node": ">=16"
   },
+  "keywords": [
+    "preact",
+    "typescript",
+    "boilerplate",
+    "webpack"
+  ],
   "author": "https://github.com/frtrriann",
   "license": "MIT",
   "dependencies": {
     "clsx": "^1.2.1",
     "minireset.css": "^0.0.7",
-    "preact": "^10.13.1"
+    "preact": "^10.13.2"
   },
   "devDependencies": {
-    "@types/node": "^18.15.10",
-    "@types/react": "^18.0.29",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
-    "@typescript-eslint/parser": "^5.56.0",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
     "copy-webpack-plugin": "^11.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
-    "css-minimizer-webpack-plugin": "^4.2.2",
+    "css-minimizer-webpack-plugin": "^5.0.0",
     "dotenv-webpack": "^8.0.1",
-    "eslint": "^8.36.0",
+    "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-webpack-plugin": "^4.0.0",
+    "eslint-webpack-plugin": "^4.0.1",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.5",
@@ -41,10 +47,10 @@
     "style-loader": "^3.3.2",
     "terser-webpack-plugin": "^5.3.7",
     "ts-loader": "^9.4.2",
-    "typescript": "^5.0.2",
-    "webpack": "^5.76.3",
+    "typescript": "^5.0.4",
+    "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.1",
+    "webpack-dev-server": "^4.13.2",
     "webpack-merge": "^5.8.0"
   }
 }
