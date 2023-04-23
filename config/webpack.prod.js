@@ -43,9 +43,11 @@ export default merge(common, {
   optimization: {
     minimize: true,
     minimizer: [
+      // Minimize js files
       new TerserPlugin({
         parallel: true,
       }),
+      // Minimize css files
       new CssMinimizerPlugin({
         parallel: true,
         minimizerOptions: {
