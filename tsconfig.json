@@ -6,9 +6,6 @@
     "baseUrl": ".",
     "outDir": "build",
     "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "jsxFactory": "",
-    "jsxFragmentFactory": "",
     "module": "commonjs",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -17,10 +14,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "react": ["./node_modules/preact/compat/"],
-      "react-dom": ["./node_modules/preact/compat/"]
-    }
   },
   "include": ["./src/**/*.tsx", "./src/**/*.ts"],
   "exclude": ["node_modules"]

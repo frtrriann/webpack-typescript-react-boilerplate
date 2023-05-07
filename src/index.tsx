@@ -1,4 +1,4 @@
-import { render } from "react";
+import { createRoot } from 'react-dom/client';
 import "./styles/index.css";
 import { Button } from "./components/Button";
 import webpackLogo from "./images/webpack-logo.svg";
@@ -22,11 +22,11 @@ const App = (
         }}
       >
         <Button size="medium" type="submit">
-        Webpack + Typescript + Preact boilerplate
+        Webpack + Typescript + React boilerplate
         </Button>
       </form>
     </div>
   </div>
 );
 
-render(App, document.getElementById("root") as Element);
+createRoot(document.getElementById("root") as Element).render(App);

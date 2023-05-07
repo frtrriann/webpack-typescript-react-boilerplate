@@ -1,7 +1,7 @@
 {
-  "name": "webpack-typescript-preact-boilerplate",
+  "name": "webpack-typescript-react-boilerplate",
   "version": "1.0.0",
-  "description": "webpack boilerplate with typescript and preact",
+  "description": "webpack boilerplate with typescript and react",
   "main": "src/index.tsx",
   "type": "module",
   "scripts": {
@@ -12,7 +12,7 @@
     "node": ">=16"
   },
   "keywords": [
-    "preact",
+    "react",
     "typescript",
     "boilerplate",
     "webpack"
@@ -22,12 +22,13 @@
   "dependencies": {
     "clsx": "^1.2.1",
     "minireset.css": "^0.0.7",
-    "preact": "^10.13.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.16.3",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.1",
+    "@types/node": "^18.16.5",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "@typescript-eslint/parser": "^5.59.2",
     "copy-webpack-plugin": "^11.0.0",
@@ -35,7 +36,7 @@
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^5.0.0",
     "dotenv-webpack": "^8.0.1",
-    "eslint": "^8.39.0",
+    "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -45,12 +46,12 @@
     "mini-css-extract-plugin": "^2.7.5",
     "prettier": "^2.8.8",
     "style-loader": "^3.3.2",
-    "terser-webpack-plugin": "^5.3.7",
+    "terser-webpack-plugin": "^5.3.8",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
-    "webpack": "^5.81.0",
-    "webpack-cli": "^5.0.2",
-    "webpack-dev-server": "^4.13.3",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0",
     "webpack-merge": "^5.8.0"
   }
 }

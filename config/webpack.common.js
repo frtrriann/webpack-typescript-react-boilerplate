@@ -83,11 +83,5 @@ export default {
   resolve: {
     modules: [paths.src, "node_modules"],
     extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
-    alias: {
-      react: "preact/compat",
-      "react-dom/test-utils": "preact/test-utils",
-      "react-dom": "preact/compat",
-      "react/jsx-runtime": "preact/jsx-runtime",
-    },
   },
 };
