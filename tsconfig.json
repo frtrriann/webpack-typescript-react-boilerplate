@@ -6,15 +6,21 @@
     "baseUrl": ".",
     "outDir": "build",
     "jsx": "react-jsx",
-    "module": "commonjs",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["react/jsx-runtime"],
+    "types": ["react/jsx-runtime", "jest"],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["./src/**/*.tsx", "./src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/__tests__/**/*"
+  ]
 }
