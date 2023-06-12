@@ -3,7 +3,7 @@ import "./styles/index.css";
 import { Button } from "./components/Button";
 import webpackLogo from "./images/webpack-logo.svg";
 import typescriptLogo from "./images/typescript-logo.svg";
-import preactLogo from "./images/preact-logo.svg";
+import reactLogo from "./images/react-logo.svg";
 
 const logoStyle = {
   width: 300,
@@ -14,7 +14,7 @@ const App = (
   <div style={{ padding: 20, textAlign: "center" }}>
     <img style={logoStyle} src={webpackLogo}></img>
     <img style={logoStyle} src={typescriptLogo}></img>
-    <img style={logoStyle} src={preactLogo}></img>
+    <img style={logoStyle} src={reactLogo}></img>
     <div>
       <form
         onSubmit={() => {
