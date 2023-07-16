@@ -1,8 +1,7 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
-    "jest": true
+    "es2021": true
   },
   "extends": [
     "eslint:recommended",
@@ -20,5 +19,15 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
-  "rules": {}
+  "rules": {},
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.ts"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
